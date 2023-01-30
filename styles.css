@@ -1,0 +1,444 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+
+### Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700, 800 */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(36, 100%, 99%);
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  padding: 3rem 1rem;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.ham img {
+  width: 40px;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+.nav-list {
+  display: none;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.hero-img {
+  margin-bottom: 2rem;
+}
+
+.hero-txt h1 {
+  font-weight: bolder;
+  font-size: 90px;
+  line-height: 80px;
+  margin-bottom: 2rem;
+}
+
+.hero-content p {
+  font-size: 28px;
+  color: hsl(236, 13%, 42%, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.hero-btn button {
+  padding: 25px 60px;
+  text-transform: uppercase;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  outline: none;
+  color: hsl(36, 100%, 99%);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+}
+
+.hero-btn button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  transition: all ease-in-out 0.5s;
+}
+
+.overlay {
+  display: none;
+}
+
+/* 
+.ham img:active + .overlay {
+  display: flex;
+} */
+
+.close-menu {
+  width: 30px;
+  margin-top: 0.625rem;
+  margin-bottom: 7rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.close-menu:hover {
+  cursor: pointer;
+}
+
+.nav-mobile {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: hsl(36, 100%, 99%);
+  padding: 20px;
+  width: 67%;
+  height: 100vh;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 10rem;
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.dropdown .drop-btn:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+
+.new {
+  background-color: hsl(240, 100%, 5%);
+  height: 50rem;
+  padding: 1.5rem 1.5rem;
+  margin-top: 2rem;
+}
+
+header h1 {
+  color: hsl(35, 77%, 62%);
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+
+.new-data h2 {
+  color: hsl(36, 100%, 99%);
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.new-data h2:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+
+.new-data p {
+  line-height: 1.7;
+  font-size: 30px;
+  color: hsl(233, 8%, 79%, 0.6);
+}
+
+.divider {
+  margin: 2rem 0;
+  background-color: hsl(233, 8%, 79%, 0.4);
+  height: 0.1px;
+  width: 100%;
+}
+
+.pc {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.pc1,
+.pc2,
+.pc3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+
+.pc-img img {
+  width: 160px;
+}
+
+.pc-data h1 {
+  color: hsl(233, 8%, 79%);
+  font-size: 45px;
+  margin-bottom: 0.5rem;
+}
+
+.pc-data h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.pc-data h2:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+
+.pc-data p {
+  color: hsl(236, 13%, 42%, 0.8);
+  font-size: 25px;
+  width: 30rem;
+  padding-right: 8rem;
+  line-height: 1.7;
+}
+
+.pc-img img:hover {
+  cursor: pointer;
+  border: 2px solid hsl(5, 85%, 63%);
+  transition: all ease-in-out 0.5s;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-color: hsl(36, 100%, 99%);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin: o auto;
+    padding: 5rem 10rem;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .nav-list a {
+    font-size: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%, 0.8);
+  }
+
+  .nav-list li a:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+  }
+
+  .nav-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .hero-container {
+    width: 109rem;
+  }
+
+  .hero-txt {
+    width: 35rem;
+  }
+
+  .hero-txt h1 {
+    font-size: 90px;
+    line-height: 0.9;
+  }
+
+  .hero-content p {
+    color: hsl(236, 13%, 42%, 0.8);
+    font-size: 24px;
+    width: 34rem;
+  }
+
+  .hero-img img {
+    display: none;
+  }
+
+  .hero-img {
+    background-image: url("./assets/images/image-web-3-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: cover;
+    width: 69rem;
+    height: 22rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-data {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero-btn button {
+    padding: 25px 65px;
+    text-transform: uppercase;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    outline: none;
+    color: hsl(36, 100%, 99%);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-top: 2rem;
+  }
+
+  .hero-btn button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .new {
+    margin-top: 0rem;
+    width: 40rem;
+    height: 41.5rem;
+  }
+
+  header h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+    margin-bottom: 2rem;
+  }
+
+  .new-data h2 {
+    color: hsl(36, 100%, 99%);
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+
+  .new-data h2:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+  }
+
+  .new-data p {
+    line-height: 1.7;
+    font-size: 20px;
+    color: hsl(233, 8%, 79%, 0.6);
+  }
+
+  .divider {
+    margin: 2.5rem 0;
+    background-color: hsl(233, 8%, 79%, 0.4);
+    height: 0.1px;
+    width: 100%;
+  }
+
+  .pc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pc-data h1 {
+    color: hsl(233, 8%, 79%);
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+  }
+
+  .pc-data h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .pc-data h2:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+  }
+
+  .pc-data p {
+    color: hsl(236, 13%, 42%, 0.8);
+    font-size: 20px;
+    line-height: 1.4;
+    width: 19rem;
+    padding-right: 1rem;
+  }
+
+  .pc-img img:hover {
+    cursor: pointer;
+    border: 2px solid hsl(5, 85%, 63%);
+    transition: all ease-in-out 0.5s;
+  }
+}

@@ -255,6 +255,177 @@ header h1 {
   transition: all ease-in-out 0.5s;
 }
 
+@media (max-width: 325px) {
+  .hero-txt h1 {
+    font-weight: bolder;
+    font-size: 35px;
+    line-height: 34px;
+    margin-bottom: 2rem;
+    width: 18rem;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+    color: hsl(236, 13%, 42%, 0.8);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .hero-btn button {
+    padding: 12px 26px;
+    text-transform: uppercase;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    outline: none;
+    color: hsl(36, 100%, 99%);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+  }
+
+  .hero-btn button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+  }
+
+  .new {
+    background-color: hsl(240, 100%, 5%);
+    padding: 1.5rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  header h1 {
+    color: hsl(35, 77%, 62%);
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+
+  .new-data h2 {
+    color: hsl(36, 100%, 99%);
+    font-size: 17px;
+    margin-bottom: 1rem;
+  }
+
+  .new-data h2:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+  }
+
+  .new-data p {
+    line-height: 1.7;
+    font-size: 12px;
+    color: hsl(233, 8%, 79%, 0.6);
+  }
+
+  .divider {
+    margin: 2rem 0;
+    background-color: hsl(233, 8%, 79%, 0.4);
+    height: 0.1px;
+    width: 100%;
+  }
+
+  .pc {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .pc1,
+  .pc2,
+  .pc3 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .pc-img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .pc-img img {
+    width: 100%;
+  }
+
+  .pc-data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pc-data h1 {
+    color: hsl(233, 8%, 79%);
+    font-size: 20px;
+  }
+
+  .pc-data h2 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .pc-data h2:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+  }
+
+  .pc-data p {
+    color: hsl(236, 13%, 42%, 0.8);
+    font-size: 12px;
+    width: 11rem;
+    line-height: 1.7;
+  }
+
+  .pc-img img:hover {
+    cursor: pointer;
+    border: 2px solid hsl(5, 85%, 63%);
+    transition: all ease-in-out 0.5s;
+  }
+
+  .close-menu {
+    width: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    position: absolute;
+    right: 1rem;
+  }
+
+  .close-menu:hover {
+    cursor: pointer;
+  }
+
+  .nav-mobile {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hsl(36, 100%, 99%);
+    padding: 20px;
+    width: 50%;
+    height: 100vh;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 7rem;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .dropdown .drop-btn:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+  }
+}
+
 @media (min-width: 768px) {
   body {
     background-color: hsl(36, 100%, 99%);

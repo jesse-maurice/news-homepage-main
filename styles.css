@@ -45,6 +45,7 @@ body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
   padding: 3rem 1rem;
+  margin: 0 auto;
 }
 
 .logo img {
@@ -78,28 +79,32 @@ nav {
   margin-bottom: 2rem;
 }
 
+.hero-img2 {
+  display: none;
+}
+
 .hero-txt h1 {
   font-weight: bolder;
-  font-size: 90px;
-  line-height: 80px;
+  font-size: 60px;
+  line-height: 55px;
   margin-bottom: 2rem;
 }
 
 .hero-content p {
-  font-size: 28px;
+  font-size: 20px;
   color: hsl(236, 13%, 42%, 0.8);
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
 .hero-btn button {
-  padding: 25px 60px;
+  padding: 15px 40px;
   text-transform: uppercase;
   background-color: hsl(5, 85%, 63%);
   border: none;
   outline: none;
   color: hsl(36, 100%, 99%);
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   letter-spacing: 4px;
   margin-bottom: 2rem;
@@ -115,11 +120,6 @@ nav {
 .overlay {
   display: none;
 }
-
-/* 
-.ham img:active + .overlay {
-  display: flex;
-} */
 
 .close-menu {
   width: 30px;
@@ -163,20 +163,19 @@ nav {
 
 .new {
   background-color: hsl(240, 100%, 5%);
-  height: 50rem;
   padding: 1.5rem 1.5rem;
   margin-top: 2rem;
 }
 
 header h1 {
   color: hsl(35, 77%, 62%);
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 2rem;
 }
 
 .new-data h2 {
   color: hsl(36, 100%, 99%);
-  font-size: 40px;
+  font-size: 26px;
   margin-bottom: 1rem;
 }
 
@@ -187,7 +186,7 @@ header h1 {
 
 .new-data p {
   line-height: 1.7;
-  font-size: 30px;
+  font-size: 20px;
   color: hsl(233, 8%, 79%, 0.6);
 }
 
@@ -202,7 +201,7 @@ header h1 {
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -211,25 +210,31 @@ header h1 {
 .pc3 {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  /* justify-content: space-between; */
   gap: 2rem;
 }
 
+.pc-img {
+  width: 7rem;
+  height: 7rem;
+}
+
 .pc-img img {
-  width: 160px;
+  width: 100%;
+}
+
+.pc-data {
+  display: flex;
+  flex-direction: column;
 }
 
 .pc-data h1 {
   color: hsl(233, 8%, 79%);
-  font-size: 45px;
-  margin-bottom: 0.5rem;
+  font-size: 40px;
 }
 
 .pc-data h2 {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
 .pc-data h2:hover {
@@ -239,9 +244,8 @@ header h1 {
 
 .pc-data p {
   color: hsl(236, 13%, 42%, 0.8);
-  font-size: 25px;
-  width: 30rem;
-  padding-right: 8rem;
+  font-size: 18px;
+  width: 17rem;
   line-height: 1.7;
 }
 
@@ -251,13 +255,15 @@ header h1 {
   transition: all ease-in-out 0.5s;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   body {
     background-color: hsl(36, 100%, 99%);
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    margin: o auto;
-    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .ham {
@@ -271,9 +277,8 @@ header h1 {
   nav {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 
   .nav-list {
@@ -281,7 +286,7 @@ header h1 {
   }
 
   .nav-list a {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: hsl(236, 13%, 42%, 0.8);
@@ -301,11 +306,11 @@ header h1 {
   }
 
   .container {
-    width: 100%;
+    max-width: 100%;
   }
 
   .hero-container {
-    width: 109rem;
+    width: 67%;
   }
 
   .hero-txt {
@@ -313,28 +318,30 @@ header h1 {
   }
 
   .hero-txt h1 {
-    font-size: 90px;
-    line-height: 0.9;
+    font-size: 60px;
+    line-height: 1.1;
+    width: 20rem;
   }
 
   .hero-content p {
     color: hsl(236, 13%, 42%, 0.8);
-    font-size: 24px;
-    width: 34rem;
+    font-size: 18px;
+    width: 25rem;
   }
 
   .hero-img img {
     display: none;
   }
 
-  .hero-img {
-    background-image: url("./assets/images/image-web-3-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: cover;
-    width: 69rem;
+  .hero-img2 {
+    display: block;
+    width: 100%;
     height: 22rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-img2 img {
+    width: 100%;
   }
 
   .hero-data {
@@ -343,16 +350,16 @@ header h1 {
   }
 
   .hero-btn button {
-    padding: 25px 65px;
+    padding: 15px 40px;
     text-transform: uppercase;
     background-color: hsl(5, 85%, 63%);
     border: none;
     outline: none;
     color: hsl(36, 100%, 99%);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .hero-btn button:hover {
@@ -364,25 +371,22 @@ header h1 {
 
   .hero {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    gap: 2rem;
   }
 
   .new {
-    margin-top: 0rem;
-    width: 40rem;
-    height: 41.5rem;
+    height: 100%;
   }
 
   header h1 {
     color: hsl(35, 77%, 62%);
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 2rem;
   }
 
   .new-data h2 {
     color: hsl(36, 100%, 99%);
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 1rem;
   }
 
@@ -393,12 +397,12 @@ header h1 {
 
   .new-data p {
     line-height: 1.7;
-    font-size: 20px;
+    font-size: 17px;
     color: hsl(233, 8%, 79%, 0.6);
   }
 
   .divider {
-    margin: 2.5rem 0;
+    margin: 2rem 0;
     background-color: hsl(233, 8%, 79%, 0.4);
     height: 0.1px;
     width: 100%;
@@ -413,14 +417,14 @@ header h1 {
 
   .pc-data h1 {
     color: hsl(233, 8%, 79%);
-    font-size: 35px;
-    margin-bottom: 0.5rem;
+    font-size: 30px;
+    margin-bottom: 0.625rem;
   }
 
   .pc-data h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.625rem;
   }
 
   .pc-data h2:hover {
@@ -430,10 +434,18 @@ header h1 {
 
   .pc-data p {
     color: hsl(236, 13%, 42%, 0.8);
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.4;
-    width: 19rem;
-    padding-right: 1rem;
+    width: 14rem;
+  }
+
+  .pc-img {
+    width: 7rem;
+    height: 6rem;
+  }
+
+  .pc-img img {
+    width: 100%;
   }
 
   .pc-img img:hover {

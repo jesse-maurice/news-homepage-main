@@ -1,11 +1,25 @@
-const navbar = document.querySelector("nav");
-const openMenu = document.getElementById("menu-button");
-const closeMenu = document.getElementById("menu-close");
+const links = document.querySelector(".links");
+const menuOpen = document.querySelector(".menu-open");
+const menuClose = document.querySelector(".menu-close");
+const backDrop = document.querySelector(".backcdrop");
 
-openMenu.addEventListener("click", () => {
-  navbar.classList.add("open");
+menuOpen.addEventListener("click", () => {
+  links.classList.add("active");
+  menuOpen.classList.add("active");
+  menuClose.classList.add("active");
+  backDrop.classList.add("active");
 });
 
-closeMenu.addEventListener("click", () => {
-  navbar.classList.remove("open");
+menuClose.addEventListener("click", () => {
+  links.classList.remove("active");
+  menuOpen.classList.remove("active");
+  menuClose.classList.remove("active");
+  backDrop.classList.remove("active");
+});
+
+backDrop.addEventListener("click", () => {
+  links.classList.remove("active");
+  menuOpen.classList.remove("active");
+  menuClose.classList.remove("active");
+  backDrop.classList.remove("active");
 });

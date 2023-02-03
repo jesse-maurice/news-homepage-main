@@ -1,20 +1,11 @@
-const mobileMenu = document.querySelector(".ham");
-const closeMenu = document.querySelector(".close-menu");
-const menu = document.querySelector(".nav-mobile");
-const overlay = document.querySelector(".overlay");
-const hero = document.querySelector(".hero-img");
+const navbar = document.querySelector("nav");
+const openMenu = document.getElementById("menu-button");
+const closeMenu = document.getElementById("menu-close");
 
-mobileMenu.addEventListener("click", () => {
-  menu.classList.add("hidden");
-  overlay.style.display = "block";
+openMenu.addEventListener("click", () => {
+  navbar.classList.add("open");
 });
 
 closeMenu.addEventListener("click", () => {
-  menu.classList.remove("hidden");
-  overlay.style.display = "none";
-});
-
-hero.addEventListener("click", () => {
-  menu.classList.remove("hidden");
-  overlay.style.display = "none";
+  navbar.classList.remove("open");
 });
